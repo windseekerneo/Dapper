@@ -50,10 +50,16 @@
 <h3>
 <a id="unreleased" class="anchor" href="#unreleased" aria-hidden="true"><span class="octicon octicon-link"></span></a>unreleased</h3>
 
+<ul>
+<li>(n/a)</li>
+</ul>
+
 <h3>
 <a id="150-beta1" class="anchor" href="#150-beta1" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.50-beta1</h3>
 
 <ul>
+<li>split <code>SqlMapper.cs</code> as it was becoming too unmaintainable; NuGet is now the only supported deployment channel</li>
+<li>remove down-level C# requirements, as "drop in the file" is no longer the expected usage</li>
 <li>
 <code>SqlMapper.Settings</code> added; provides high-level global configuration; initially <code>CommandTimeout</code> (<a href="https://github.com/Irrational86" class="user-mention">@Irrational86</a>)</li>
 <li>improve error message if an array is used as a parameter in an invalid context</li>
