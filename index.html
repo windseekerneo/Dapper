@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Dapper-dot-net by StackExchange</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Dapper-dot-net</h1>
+        <h2>Dapper - a simple object mapper for .Net</h2>
+        <a href="https://github.com/StackExchange/dapper-dot-net" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h2>
+<a id="release--notes" class="anchor" href="#release--notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release  Notes</h2>
+
+<h3>
+<a id="140" class="anchor" href="#140" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.40</h3>
+
+<ul>
+<li>workaround for broken <code>GetValues()</code> on Mono; add <code>AsList()</code>
+</li>
+</ul>
+
+<h3>
+<a id="139" class="anchor" href="#139" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.39</h3>
+
+<ul>
+<li>fix case on SQL CLR types; grid-reader should respect no-cache flags; make parameter inclusion case-insensitive</li>
+</ul>
+
+<h3>
+<a id="138" class="anchor" href="#138" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.38</h3>
+
+<ul>
+<li>specify constructor explicitly; allow value-type parameters (albeit: boxed)</li>
+</ul>
+
+<h3>
+<a id="137" class="anchor" href="#137" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.37</h3>
+
+<ul>
+<li>Reuse StringBuilder instances when possible (list parameters in particular)</li>
+</ul>
+
+<h3>
+<a id="136" class="anchor" href="#136" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.36</h3>
+
+<ul>
+<li>Fix Issue #192 (expanded parameter naming glitch) and Issue #178 (execute reader now wraps the command/reader pair, to extend the command lifetime; note that the underlying command/reader are available by casting to <code>IWrappedDataReader</code>)</li>
+</ul>
+
+<h3>
+<a id="135" class="anchor" href="#135" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.35</h3>
+
+<ul>
+<li>Fix Issue #151 (Execute should work with <code>ExpandoObject</code> etc); Fix Issue #182 (better support for db-type when using <code>object</code> values);</li>
+<li>output expressions / callbacks in dynamic args (via Derek); arbitrary number of types in multi-mapping (via James Holwell);</li>
+<li>fix <code>DbString</code>/Oracle bug (via Mauro Cerutti); new support for <strong>named positional arguments</strong>
+</li>
+</ul>
+
+<h3>
+<a id="134" class="anchor" href="#134" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.34</h3>
+
+<ul>
+<li>Support for <code>SqlHierarchyId</code> (core)</li>
+</ul>
+
+<h3>
+<a id="133" class="anchor" href="#133" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.33</h3>
+
+<ul>
+<li>Support for <code>SqlGeometry</code> (core) and <code>DbGeometry</code> (EF)</li>
+</ul>
+
+<h3>
+<a id="132" class="anchor" href="#132" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.32</h3>
+
+<ul>
+<li>Support for <code>SqlGeography</code> in core library</li>
+</ul>
+
+<h3>
+<a id="131" class="anchor" href="#131" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.31</h3>
+
+<ul>
+<li>Fix issue with error message when there is a column/type mismatch</li>
+</ul>
+
+<h3>
+<a id="130" class="anchor" href="#130" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.30</h3>
+
+<ul>
+<li>Better async cancellation</li>
+</ul>
+
+<h3>
+<a id="129" class="anchor" href="#129" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.29</h3>
+
+<ul>
+<li>Make underscore name matching optional (opt-in) - this can be a breaking change for some people</li>
+</ul>
+
+<h3>
+<a id="128" class="anchor" href="#128" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.28</h3>
+
+<ul>
+<li>Much better numeric type conversion; fix for large oracle strings; map <code>Foo_Bar</code> to <code>FooBar</code> (etc); <code>ExecuteScalar</code> added; stability fixes</li>
+</ul>
+
+<h3>
+<a id="127" class="anchor" href="#127" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.27</h3>
+
+<ul>
+<li>Fixes for type-handler parse; ensure type-handlers get last dibs on configuring parameters</li>
+</ul>
+
+<h3>
+<a id="126" class="anchor" href="#126" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.26</h3>
+
+<ul>
+<li>New type handler API for extension support</li>
+</ul>
+
+<h3>
+<a id="125" class="anchor" href="#125" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.25</h3>
+
+<ul>
+<li>Command recycling and disposing during pipelined async multi-exec; enable pipeline (via sync-over-async) for sync API</li>
+</ul>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/StackExchange/dapper-dot-net/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/StackExchange/dapper-dot-net/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/StackExchange/dapper-dot-net"></a> is maintained by <a href="https://github.com/StackExchange">StackExchange</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-23092854-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
