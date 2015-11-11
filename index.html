@@ -1,35 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>Dapper-dot-net by StackExchange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <title>Dapper-dot-net by StackExchange</title>
   </head>
-
   <body>
-    <header>
-      <div class="inner">
-        <h1>Dapper-dot-net</h1>
-        <h2>Dapper - a simple object mapper for .Net</h2>
-        <a href="https://github.com/StackExchange/dapper-dot-net" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
+    <section class="page-header">
+      <h1 class="project-name">Dapper-dot-net</h1>
+      <h2 class="project-tagline">Dapper - a simple object mapper for .Net</h2>
+      <a href="https://github.com/StackExchange/dapper-dot-net" class="btn">View on GitHub</a>
+      <a href="https://github.com/StackExchange/dapper-dot-net/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/StackExchange/dapper-dot-net/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h2>
+    <section class="main-content">
+      <h2>
 <a id="release--notes" class="anchor" href="#release--notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release  Notes</h2>
+
+<h3>
+<a id="unreleased" class="anchor" href="#unreleased" aria-hidden="true"><span class="octicon octicon-link"></span></a>unreleased</h3>
+
+<h3>
+<a id="150-beta1" class="anchor" href="#150-beta1" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.50-beta1</h3>
+
+<ul>
+<li>
+<code>SqlMapper.Settings</code> added; provides high-level global configuration; initially <code>CommandTimeout</code> (<a href="https://github.com/Irrational86" class="user-mention">@Irrational86</a>)</li>
+<li>improve error message if an array is used as a parameter in an invalid context</li>
+<li>add <code>Type[]</code> support for <code>GridReader.Read</code> scenarios (<a href="https://github.com/NikolayGlynchak" class="user-mention">@NikolayGlynchak</a>)</li>
+<li>support for custom type-maps in collection parameters (<a href="https://github.com/gjsduarte" class="user-mention">@gjsduarte</a>)</li>
+<li>fix incorrect cast in <code>QueryAsync&lt;T&gt;</code> (<a href="https://github.com/phnx47" class="user-mention">@phnx47</a>, #346)</li>
+<li>fix incorrect null handling re <code>UdtTypeName</code> (<a href="https://github.com/perliedman" class="user-mention">@perliedman</a>)</li>
+<li>support for <code>SqlDataRecord</code> (<a href="https://github.com/sqmgh" class="user-mention">@sqmgh</a>)</li>
+<li>allow <code>DbString</code> default for <code>IsAnsi</code> to be specified (<a href="https://github.com/kppullin" class="user-mention">@kppullin</a>)</li>
+<li>provide <code>TypeMapProvider</code> with lazy func-based initialization (<a href="https://github.com/garyhuntddn" class="user-mention">@garyhuntddn</a>)</li>
+<li>core-clr updated to beta-8 and various cleanups/fixes</li>
+<li>built using core-clr build tools</li>
+</ul>
+
+<h3>
+<a id="142" class="anchor" href="#142" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.42</h3>
+
+<ul>
+<li>fix bug with dynamic parameters where <code>.Get&lt;T&gt;</code> is called before the command is executed</li>
+</ul>
+
+<h3>
+<a id="141-beta5" class="anchor" href="#141-beta5" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.41-beta5</h3>
+
+<ul>
+<li>core-clr packaging build and workarounds</li>
+<li>fix bug with literal <code>{=val}</code> boolean replacements</li>
+</ul>
+
+<h3>
+<a id="141-beta4" class="anchor" href="#141-beta4" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.41-beta4</h3>
+
+<ul>
+<li>core-clr packaging build</li>
+<li>improve mapping to enum members (<a href="https://github.com/BrianJolly" class="user-mention">@BrianJolly</a>)</li>
+</ul>
+
+<h3>
+<a id="141-beta" class="anchor" href="#141-beta" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.41-beta</h3>
+
+<ul>
+<li>core-clr packaging build</li>
+</ul>
+
+<h3>
+<a id="141-alpha" class="anchor" href="#141-alpha" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.41-alpha</h3>
+
+<ul>
+<li>introduces dnx (core-clr) experimental changes</li>
+<li>adds <code>SqlBuilder</code> project</li>
+<li>improve error message when incorrectly accessing parameter values</li>
+</ul>
 
 <h3>
 <a id="140" class="anchor" href="#140" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.40</h3>
@@ -146,24 +197,14 @@
 <ul>
 <li>Command recycling and disposing during pipelined async multi-exec; enable pipeline (via sync-over-async) for sync API</li>
 </ul>
-        </section>
 
-        <aside id="sidebar">
-          <a href="https://github.com/StackExchange/dapper-dot-net/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/StackExchange/dapper-dot-net/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/StackExchange/dapper-dot-net">Dapper-dot-net</a> is maintained by <a href="https://github.com/StackExchange">StackExchange</a>.</span>
 
-          <p class="repo-owner"><a href="https://github.com/StackExchange/dapper-dot-net"></a> is maintained by <a href="https://github.com/StackExchange">StackExchange</a>.</p>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
-    </div>
+    </section>
 
             <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
