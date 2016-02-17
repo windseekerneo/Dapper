@@ -20,10 +20,10 @@
 
     <section class="main-content">
       <h1>
-<a id="dapper---a-simple-object-mapper-for-net" class="anchor" href="#dapper---a-simple-object-mapper-for-net" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dapper - a simple object mapper for .Net</h1>
+<a id="dapper---a-simple-object-mapper-for-net" class="anchor" href="#dapper---a-simple-object-mapper-for-net" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dapper - a simple object mapper for .Net</h1>
 
 <h2>
-<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h2>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Overview</h2>
 
 <p>A brief guide is available <a href="https://github.com/StackExchange/dapper-dot-net/blob/master/Readme.md">on github</a></p>
 
@@ -32,7 +32,7 @@
 <p>Questions on Stack Overflow should be tagged <a href="http://stackoverflow.com/questions/tagged/dapper"><code>dapper</code></a></p>
 
 <h2>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
 
 <p>From NuGet:</p>
 
@@ -45,18 +45,28 @@
 </code></pre>
 
 <h2>
-<a id="release--notes" class="anchor" href="#release--notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release  Notes</h2>
+<a id="release--notes" class="anchor" href="#release--notes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release  Notes</h2>
 
 <h3>
-<a id="unreleased" class="anchor" href="#unreleased" aria-hidden="true"><span class="octicon octicon-link"></span></a>unreleased</h3>
+<a id="unreleased" class="anchor" href="#unreleased" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>unreleased</h3>
 
 <ul>
-<li>addition of <code>GetRowParser&lt;T&gt;</code>
-</li>
+<li>n/a</li>
 </ul>
 
 <h3>
-<a id="150-beta7" class="anchor" href="#150-beta7" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.50-beta7</h3>
+<a id="150-beta8" class="anchor" href="#150-beta8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.50-beta8</h3>
+
+<ul>
+<li>addition of <code>GetRowParser&lt;T&gt;</code> extension method on <code>IDataReader</code> API - allows manual construction of discriminated unions, etc</li>
+<li>addition of <code>Settings.PadListExpansions</code> - reduces query-plan saturation by padding list expansions with <code>null</code> values (opt-in, because on some DB configurations this could change the meaning)</li>
+<li>addition of <code>Settings.ApplyNullValues</code> - assigns (rather than ignores) <code>null</code> values when possible</li>
+<li>fix for #461 - ensure type-handlers work for constructor-based initialization</li>
+<li>fix for #455 - make the <code>LookupDbType</code> method available again</li>
+</ul>
+
+<h3>
+<a id="150-beta7" class="anchor" href="#150-beta7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.50-beta7</h3>
 
 <ul>
 <li>addition of <code>GetRowParser(Type)</code> (and refactor the backing store for readers to suit)</li>
@@ -64,14 +74,14 @@
 </ul>
 
 <h3>
-<a id="150-beta6" class="anchor" href="#150-beta6" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.50-beta6</h3>
+<a id="150-beta6" class="anchor" href="#150-beta6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.50-beta6</h3>
 
 <ul>
 <li>fix for issue #424 - defensive <code>SqlDataRecord</code> handling</li>
 </ul>
 
 <h3>
-<a id="150-beta5" class="anchor" href="#150-beta5" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.50-beta5</h3>
+<a id="150-beta5" class="anchor" href="#150-beta5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.50-beta5</h3>
 
 <ul>
 <li>Add "single", "first", "single or default" to complement the "first or default" options from 1.50-beta4</li>
@@ -80,7 +90,7 @@
 </ul>
 
 <h3>
-<a id="150-beta4" class="anchor" href="#150-beta4" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.50-beta4</h3>
+<a id="150-beta4" class="anchor" href="#150-beta4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.50-beta4</h3>
 
 <ul>
 <li>Add <code>QueryFirstOrDefault</code> / <code>ReadFirstOrDefault</code> methods that optimize the single-row scenario</li>
@@ -90,14 +100,14 @@
 </ul>
 
 <h3>
-<a id="150-beta3" class="anchor" href="#150-beta3" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.50-beta3</h3>
+<a id="150-beta3" class="anchor" href="#150-beta3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.50-beta3</h3>
 
 <ul>
 <li>Core CLR support: add explicit <code>dnx451</code> support in addition to <code>dotnet5.4</code> (aka <code>netstandard1.4</code>)</li>
 </ul>
 
 <h3>
-<a id="150-beta2" class="anchor" href="#150-beta2" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.50-beta2</h3>
+<a id="150-beta2" class="anchor" href="#150-beta2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.50-beta2</h3>
 
 <ul>
 <li>Core CLR now targets rc1 / 23516</li>
@@ -106,7 +116,7 @@
 </ul>
 
 <h3>
-<a id="150-beta1" class="anchor" href="#150-beta1" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.50-beta1</h3>
+<a id="150-beta1" class="anchor" href="#150-beta1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.50-beta1</h3>
 
 <ul>
 <li>split <code>SqlMapper.cs</code> as it was becoming too unmaintainable; NuGet is now the only supported deployment channel</li>
@@ -126,14 +136,14 @@
 </ul>
 
 <h3>
-<a id="142" class="anchor" href="#142" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.42</h3>
+<a id="142" class="anchor" href="#142" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.42</h3>
 
 <ul>
 <li>fix bug with dynamic parameters where <code>.Get&lt;T&gt;</code> is called before the command is executed</li>
 </ul>
 
 <h3>
-<a id="141-beta5" class="anchor" href="#141-beta5" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.41-beta5</h3>
+<a id="141-beta5" class="anchor" href="#141-beta5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.41-beta5</h3>
 
 <ul>
 <li>core-clr packaging build and workarounds</li>
@@ -141,7 +151,7 @@
 </ul>
 
 <h3>
-<a id="141-beta4" class="anchor" href="#141-beta4" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.41-beta4</h3>
+<a id="141-beta4" class="anchor" href="#141-beta4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.41-beta4</h3>
 
 <ul>
 <li>core-clr packaging build</li>
@@ -149,14 +159,14 @@
 </ul>
 
 <h3>
-<a id="141-beta" class="anchor" href="#141-beta" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.41-beta</h3>
+<a id="141-beta" class="anchor" href="#141-beta" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.41-beta</h3>
 
 <ul>
 <li>core-clr packaging build</li>
 </ul>
 
 <h3>
-<a id="141-alpha" class="anchor" href="#141-alpha" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.41-alpha</h3>
+<a id="141-alpha" class="anchor" href="#141-alpha" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.41-alpha</h3>
 
 <ul>
 <li>introduces dnx (core-clr) experimental changes</li>
@@ -165,7 +175,7 @@
 </ul>
 
 <h3>
-<a id="140" class="anchor" href="#140" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.40</h3>
+<a id="140" class="anchor" href="#140" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.40</h3>
 
 <ul>
 <li>workaround for broken <code>GetValues()</code> on Mono; add <code>AsList()</code>
@@ -173,35 +183,35 @@
 </ul>
 
 <h3>
-<a id="139" class="anchor" href="#139" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.39</h3>
+<a id="139" class="anchor" href="#139" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.39</h3>
 
 <ul>
 <li>fix case on SQL CLR types; grid-reader should respect no-cache flags; make parameter inclusion case-insensitive</li>
 </ul>
 
 <h3>
-<a id="138" class="anchor" href="#138" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.38</h3>
+<a id="138" class="anchor" href="#138" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.38</h3>
 
 <ul>
 <li>specify constructor explicitly; allow value-type parameters (albeit: boxed)</li>
 </ul>
 
 <h3>
-<a id="137" class="anchor" href="#137" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.37</h3>
+<a id="137" class="anchor" href="#137" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.37</h3>
 
 <ul>
 <li>Reuse StringBuilder instances when possible (list parameters in particular)</li>
 </ul>
 
 <h3>
-<a id="136" class="anchor" href="#136" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.36</h3>
+<a id="136" class="anchor" href="#136" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.36</h3>
 
 <ul>
 <li>Fix Issue #192 (expanded parameter naming glitch) and Issue #178 (execute reader now wraps the command/reader pair, to extend the command lifetime; note that the underlying command/reader are available by casting to <code>IWrappedDataReader</code>)</li>
 </ul>
 
 <h3>
-<a id="135" class="anchor" href="#135" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.35</h3>
+<a id="135" class="anchor" href="#135" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.35</h3>
 
 <ul>
 <li>Fix Issue #151 (Execute should work with <code>ExpandoObject</code> etc); Fix Issue #182 (better support for db-type when using <code>object</code> values);</li>
@@ -211,70 +221,70 @@
 </ul>
 
 <h3>
-<a id="134" class="anchor" href="#134" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.34</h3>
+<a id="134" class="anchor" href="#134" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.34</h3>
 
 <ul>
 <li>Support for <code>SqlHierarchyId</code> (core)</li>
 </ul>
 
 <h3>
-<a id="133" class="anchor" href="#133" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.33</h3>
+<a id="133" class="anchor" href="#133" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.33</h3>
 
 <ul>
 <li>Support for <code>SqlGeometry</code> (core) and <code>DbGeometry</code> (EF)</li>
 </ul>
 
 <h3>
-<a id="132" class="anchor" href="#132" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.32</h3>
+<a id="132" class="anchor" href="#132" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.32</h3>
 
 <ul>
 <li>Support for <code>SqlGeography</code> in core library</li>
 </ul>
 
 <h3>
-<a id="131" class="anchor" href="#131" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.31</h3>
+<a id="131" class="anchor" href="#131" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.31</h3>
 
 <ul>
 <li>Fix issue with error message when there is a column/type mismatch</li>
 </ul>
 
 <h3>
-<a id="130" class="anchor" href="#130" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.30</h3>
+<a id="130" class="anchor" href="#130" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.30</h3>
 
 <ul>
 <li>Better async cancellation</li>
 </ul>
 
 <h3>
-<a id="129" class="anchor" href="#129" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.29</h3>
+<a id="129" class="anchor" href="#129" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.29</h3>
 
 <ul>
 <li>Make underscore name matching optional (opt-in) - this can be a breaking change for some people</li>
 </ul>
 
 <h3>
-<a id="128" class="anchor" href="#128" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.28</h3>
+<a id="128" class="anchor" href="#128" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.28</h3>
 
 <ul>
 <li>Much better numeric type conversion; fix for large oracle strings; map <code>Foo_Bar</code> to <code>FooBar</code> (etc); <code>ExecuteScalar</code> added; stability fixes</li>
 </ul>
 
 <h3>
-<a id="127" class="anchor" href="#127" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.27</h3>
+<a id="127" class="anchor" href="#127" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.27</h3>
 
 <ul>
 <li>Fixes for type-handler parse; ensure type-handlers get last dibs on configuring parameters</li>
 </ul>
 
 <h3>
-<a id="126" class="anchor" href="#126" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.26</h3>
+<a id="126" class="anchor" href="#126" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.26</h3>
 
 <ul>
 <li>New type handler API for extension support</li>
 </ul>
 
 <h3>
-<a id="125" class="anchor" href="#125" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.25</h3>
+<a id="125" class="anchor" href="#125" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.25</h3>
 
 <ul>
 <li>Command recycling and disposing during pipelined async multi-exec; enable pipeline (via sync-over-async) for sync API</li>
