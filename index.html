@@ -53,7 +53,7 @@
 <a id="150-beta9" class="anchor" href="#150-beta9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.50-beta9</h3>
 
 <ul>
-<li>fix for <code>PadListExpansions</code> to work correctly with <code>not in</code> scenarios</li>
+<li>fix for <code>PadListExpansions</code> to work correctly with <code>not in</code> scenarios; now uses last non-null value instead of <code>null</code>; if none available, don't pad</li>
 <li>fix problems with single-result/single-row not being supported by all providers (basically: sqlite, #466)</li>
 <li>fix problems with enums - nulls (#467) and primitive values (#468)</li>
 <li>add support for C# 6 get-only properties (#473)</li>
@@ -65,7 +65,8 @@
 
 <ul>
 <li>addition of <code>GetRowParser&lt;T&gt;</code> extension method on <code>IDataReader</code> API - allows manual construction of discriminated unions, etc</li>
-<li>addition of <code>Settings.PadListExpansions</code> - reduces query-plan saturation by padding list expansions with <code>null</code> values (opt-in, because on some DB configurations this could change the meaning)</li>
+<li>addition of <code>Settings.PadListExpansions</code> - reduces query-plan saturation by padding list expansions with <code>null</code> values (opt-in, because on some DB configurations this could change the meaning) <em>(note: bad choice of <code>null</code> revised in 1.50-beta9)</em>
+</li>
 <li>addition of <code>Settings.ApplyNullValues</code> - assigns (rather than ignores) <code>null</code> values when possible</li>
 <li>fix for #461 - ensure type-handlers work for constructor-based initialization</li>
 <li>fix for #455 - make the <code>LookupDbType</code> method available again</li>
