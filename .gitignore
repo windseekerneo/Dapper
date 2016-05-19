@@ -6,3 +6,7 @@ obj/
 project.lock.json
 *.user
 packages/
+.dotnet/
+.vs/
+*.sdf
+_ReSharper*
