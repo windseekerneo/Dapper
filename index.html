@@ -50,25 +50,18 @@
 <a id="release--notes" class="anchor" href="#release--notes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release  Notes</h2>
 
 <h3>
-<a id="150-rc2a" class="anchor" href="#150-rc2a" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.50-rc2a</h3>
+<a id="1500-rc2b" class="anchor" href="#1500-rc2b" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.50.0-rc2b</h3>
 
 <ul>
-<li>Why RC2a? We can't use RC2.1 on NuGet yet. It does not yet support SemVer 2.0.</li>
-<li>All methods for <code>netstandard1.3</code> have moved back to interfaces for ADO.NET, e.g. <code>IDbConnection</code>. These interfaces were restored in .NET Core RC2.</li>
+<li>new <code>InListStringSplitCount</code> global setting; if set (non-negative), <code>in @foo</code> expansions (of at least the specified size) of primitive types (<code>int</code>, <code>tinyint</code>, <code>smallint</code>, <code>bigint</code>) are implemented via the SQL Server 2016 (compat level 130) <code>STRING_SPLIT</code> function</li>
+<li>fix for incorrect conversions in <code>GridReader</code> (#254)</li>
 </ul>
 
 <h3>
-<a id="150-rc2" class="anchor" href="#150-rc2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.50-rc2</h3>
+<a id="1500-rc2--1500-rc2a" class="anchor" href="#1500-rc2--1500-rc2a" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.50.0-rc2 / 1.50.0-rc2a</h3>
 
 <ul>
-<li>It turns out beta9 is newer than beta10 is semantic versioning. We hereby present RC2.</li>
-</ul>
-
-<h3>
-<a id="150-beta10" class="anchor" href="#150-beta10" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.50-beta10</h3>
-
-<ul>
-<li>Updated for .NET Core RC2, compatible with netstandard1.3 and higher</li>
+<li>packaging for .NET Core rc2</li>
 </ul>
 
 <h3>
